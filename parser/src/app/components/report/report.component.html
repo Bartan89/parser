@@ -1,0 +1,15 @@
+
+<div class="report">
+  <div class="duplicates">
+    <span>Duplicate references:</span>
+    <div class="dup-list">
+      <p *ngFor="let dups of (duplicates$ | async)">{{dups}}</p>
+    </div>
+  </div>
+  <ng-container *ngIf="(numberInFocus$ | async) as infocus">
+    <div class="balance" [style.backgroundColor]="infocus.correct ? 'rgb(171, 241, 160)' : 'red'">
+      <span>Balance checker:</span>
+      <h5>{{infocus.amount}}</h5>
+    </div>
+  </ng-container>
+</div>

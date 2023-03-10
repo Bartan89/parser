@@ -1,0 +1,7 @@
+<ng-container *ngIf="(position$ | async) as position">
+  <div id="auditor" [style.top]="position.y +'px'" [style.left]="position.x + 'px'" class="auditor">
+    <app-report></app-report>
+    <button (click)="nextCase()">next</button>
+    <button (click)="allCases()">scan all</button>
+  </div>
+</ng-container>

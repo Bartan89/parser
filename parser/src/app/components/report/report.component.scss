@@ -1,0 +1,46 @@
+.report {
+  margin: 2px;
+  display: flex;
+}
+
+.balance {
+  border: 1px solid rgb(44, 44, 44);
+  margin: 2px;
+  height: 150px;
+  width: 250px;
+  border-radius: 4px;
+  color: rgb(75, 75, 75);
+  font-size: 28px;
+}
+
+.duplicates {
+  border-radius: 4px;
+  margin: 2px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(44, 44, 44);
+  background-color: rgb(255, 255, 255);
+}
+
+p {
+  font: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dup-list {
+  padding-top: 20px;
+}
+
+span {
+  border: 1px solid rgb(72, 72, 72);
+  margin: 3px;
+  padding: 3px;
+  font-size: 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 5px;
+}
+
+h5 {
+  margin: 50px 25px;
+}

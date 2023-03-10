@@ -1,0 +1,26 @@
+
+<ng-container *ngIf="userChangedScreen$ | async">
+  <app-auditor *ngIf="loaded$ | async"></app-auditor>
+  <ng-container *ngIf="data$ | async as data">
+    <table>
+      <tr>
+        <th>reference</th>
+        <th>accountNumber</th>
+        <th>description</th>
+        <th>startBalance</th>
+        <th>mutation</th>
+        <th>endBalance</th>
+      </tr>
+      <ng-container *ngFor="let d of data">
+        <tr record>
+          <td>{{d.reference}}</td>
+          <td>{{d.accountNumber}}</td>
+          <td>{{d.description}}</td>
+          <td>{{d.startBalance}}</td>
+          <td>{{d.mutation}}</td>
+          <td>{{d.endBalance}}</td>
+          <tr>
+          </ng-container>
+        </table>
+      </ng-container>
+    </ng-container>
